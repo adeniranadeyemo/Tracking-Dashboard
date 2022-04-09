@@ -26,7 +26,8 @@ main{
   height: 100px;
   width: 100%;
   border-radius: 10px;
-  background:  hsl(236, 100%, 87%);
+  background: skyblue;
+  /* background:  hsl(235, 45%, 61%); */
   display: flex;
   align-items: center;
   padding: 25px;
@@ -56,4 +57,87 @@ button{
   color: hsl(235, 45%, 61%);
   background: hsl(235, 46%, 20%);
   font-size: 16px;
+}
+
+.daily-schedule{
+  width: 100%;
+}
+
+.box{
+  height: 140px;
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 1em;
+  position: relative;
+}
+
+.work{
+  background: hsl(15, 100%, 70%);
+}
+
+.play{
+  background: hsl(195, 74%, 62%);
+}
+
+.study{
+  background: hsl(348, 100%, 68%);
+}
+
+.exercise{
+  background: hsl(145, 58%, 55%);
+}
+
+.social{
+  background: hsl(264, 64%, 52%);
+}
+
+.self{
+  background: hsl(43, 84%, 65%);
+}
+
+.details{
+  position: absolute;
+  height: 100px;
+  width: 100%;
+  background: hsl(235, 46%, 20%);
+  bottom: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  color: white;
+  padding: 25px;
+}
+
+.icon{
+  margin-top: 0px;
+  right: 0;
+  position: absolute;
+}
+
+h2{
+  font-weight: 400;
+  color: white;
+  font-size: 30px;
+}
+
+.details{
+}
+
+.dl{
+  display: flex;
+  justify-content: space-between;
+}
+
+.details img{
+  height: 5px;
+  width: 20px;
+}
+
+.dl-nmb{
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dl-nmb p{
+  margin-top: 10px;
 }
