@@ -59,6 +59,10 @@ button{
   font-size: 16px;
 }
 
+button:hover{
+  color: white;
+}
+
 .daily-schedule{
   width: 100%;
 }
@@ -119,8 +123,6 @@ h2{
   font-size: 30px;
 }
 
-.details{
-}
 
 .dl{
   display: flex;
@@ -140,4 +142,12 @@ h2{
 
 .dl-nmb p{
   margin-top: 10px;
+}
+
+.weekly-schedule{
+  /* margin-top: 5em; */
+}
+
+.monthly-schedule{
+  /* margin-top: 5em; */
 }
