@@ -63,17 +63,16 @@ button:hover{
   color: white;
 }
 
-.daily-schedule{
-  width: 100%;
-  display: none;
-}
-
 .box{
   height: 140px;
   width: 100%;
   border-radius: 10px;
   margin-top: 1em;
   position: relative;
+}
+
+.daily-schedule, .weekly-schedule, .monthly-schedule{
+  display: none;
 }
 
 .work{
@@ -144,12 +143,148 @@ h2{
   margin-top: 10px;
 }
 
-.weekly-schedule{
-  display: none;
-  /* margin-top: 5em; */
+button:hover{
+  cursor: pointer;
+}
+
+
+@media only screen and (min-width: 1199px){
+
+  body{
+   padding: 90px;
+  }
+
+  main{
+    margin: 1.5em 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .profile{
+    height: 33em;
+    width: 25%;
+  }
+
+  .header{
+    height: 22em;
+    display: block;
+    background: hsl(236, 70%, 60%);
+  }
+
+  .header img{
+    height: 75px;
+    width: 75px;
+    margin-top: 10px;
+  }
+
+  .header h1{
+    margin-top: 1em;
+    margin-left: 0px;
+    font-size: 2.4em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+  }
+
+  .dwm{
+    display: flex;
+    flex-direction: column;
+    margin-top: -10px;
+  }
+
+  .dwm button{
+    text-align: left;
+    line-height: 45px;
+  }
+
+  .daily-schedule{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 33em;
+    gap: 14px;
+    margin-left: 15px;
+    width: 75%;
+  }
+
+  .weekly-schedule{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 33em;
+    gap: 14px;
+    margin-left: 15px;
+    width: 75%;
 }
 
 .monthly-schedule{
-  display: none;
-  /* margin-top: 5em; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 33em;
+  gap: 14px;
+  margin-left: 15px;
+  width: 75%;
 }
+
+.box{
+  width: 32%;
+  height: 250px;
+}
+
+.work, .play, .study{
+  margin-top: 0px;
+}
+
+.exercise, .social, .self{
+  margin-bottom: -0px;
+}
+
+.details{
+  height: 210px;
+}
+
+.dl-nmb{
+  display: flex;
+  flex-direction: column;
+}
+
+h2{
+  font-size: 2.5em;
+  margin-top: 20px;
+  font-weight: 300;
+}
+
+.dl-nmb p{
+  margin-top: 25px;
+}
+
+.daily-schedule, .weekly-schedule, .monthly-schedule{
+  display: none;
+}
+
+}
+
+/* ## Colors
+
+### Primary
+
+- Blue: hsl(246, 80%, 60%)
+
+- Light red (work): hsl(15, 100%, 70%)
+- Soft blue (play): hsl(195, 74%, 62%)
+- Light red (study): hsl(348, 100%, 68%)
+- Lime green (exercise): hsl(145, 58%, 55%)
+- Violet (social): hsl(264, 64%, 52%)
+- Soft orange (self care): hsl(43, 84%, 65%)
+
+### Neutral
+
+- Very dark blue: hsl(226, 43%, 10%)
+- Dark blue: hsl(235, 46%, 20%)
+- Desaturated blue: hsl(235, 45%, 61%)
+- Pale Blue: hsl(236, 100%, 87%)
+ */
